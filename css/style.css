@@ -1,0 +1,150 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+font-family: 'Outfit', sans-serif;*/
+:root{
+    --mainblue: hsl(217, 54%, 11%);
+    --cardblue: hsl(216, 50%, 16%);
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Cyan2: hsla(178, 100%, 50%, 0.5);
+    --Verydarkblue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color:var(--mainblue); 
+}
+.center{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 355px;
+    margin: 200px auto 0 auto;
+
+}
+.nft{
+    background-color: var(--cardblue);
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 10px;
+
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+
+}
+.photo img{
+    width: 90%;
+    border-radius: 10px;
+}   
+.view{
+    background-image: url(../img/icon-view.svg);
+    position: absolute;
+    background-color: var(--Cyan2);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    opacity: 0;
+}
+.view:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.letters{
+    margin-left: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+h1{
+    color: var(--White);
+    font-weight: 400;
+    font-size: 23px;
+}
+h1:hover, .creation span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p{
+    font-size: 18px;
+    color: var(--Softblue);
+}
+.eth{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1px;
+    border-bottom: 0.5px solid var(--Softblue);
+    opacity: 0.7;
+    width: 90%;
+}
+.p1{
+    color: var(--Cyan);
+}
+.ethereum{
+    height: 18px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo img{
+    margin-right: 5px;
+}
+.p2{
+    color: var(--Softblue);
+}
+.creation{
+    color: var(--Softblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.creation span{
+    color: var(--White);
+}
+.imagen{
+    width: 35px;
+    border: 0.5px solid var(--White);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 50px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
